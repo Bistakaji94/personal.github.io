@@ -161,12 +161,13 @@ collections:
       name: name
       widget: string
       hint: Appears in the header, footer and page titles.
-    - label: Online nickname
+        - label: Online nickname
       name: nickname
       widget: string
-    - label: Small line above the headline
-      name: eyebrow
-      widget: string
+    - label: Show my online nickname in the footer
+      name: showNickname
+      widget: boolean
+      default: true
     - label: Homepage headline
       name: tagline
       widget: string
