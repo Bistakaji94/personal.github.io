@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Ratna Bahadur Bista</title>
-  <meta name="description" content="Contact Ratna Bahadur Bista about Balboa dance lessons for weddings and events, Mathematics and Physics tutoring, or GIS and mountain research.">
+  <meta name="description" content="Contact Ratna Bahadur Bista about research collaboration, Mathematics and Physics tutoring, Balboa dance lessons for weddings and events, or mountain guidance.">
   <meta name="theme-color" content="#f3efe5">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact | Ratna Bahadur Bista">
-  <meta property="og:description" content="Contact Ratna Bahadur Bista about Balboa dance lessons for weddings and events, Mathematics and Physics tutoring, or GIS and mountain research.">
+  <meta property="og:description" content="Contact Ratna Bahadur Bista about research, tutoring, Balboa dance lessons or mountain guidance.">
   <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas,_Ama_Dablam,_Nepal.jpg?width=1200">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -35,7 +35,7 @@
         <p class="label">Contact</p>
         <h1>Let's talk</h1>
         <p class="lede">
-          Dance classes for a wedding or event, tutoring, research or a mountain question:
+          Research, tutoring, dance classes for a wedding or event, or a mountain question:
           tell me a little and I'll reply.
         </p>
       </div>
@@ -69,28 +69,47 @@
               <span class="field-error"></span>
             </div>
             <div class="field">
-              <label for="topic">What is this about?</label>
+              <label for="topic">What is your enquiry about?</label>
               <select id="topic" name="topic" required>
                 <option value="">Please choose</option>
-                <optgroup label="Dance">
-                  <option>Dance: wedding lesson or first dance</option>
-                  <option>Dance: ballroom or social dance event</option>
-                  <option>Dance: school, college or club workshop</option>
-                  <option>Dance: private or group lessons</option>
-                </optgroup>
-                <optgroup label="Other">
-                  <option>Tutoring: Mathematics</option>
-                  <option>Tutoring: Physics</option>
-                  <option>GIS or research collaboration</option>
-                  <option>Trekking or mountain enquiry</option>
-                  <option>Something else</option>
-                </optgroup>
+                <option>Research and GIS collaboration</option>
+                <option>Tutoring</option>
+                <option>Dance (Balboa) lessons</option>
+                <option>Trekking and mountain guidance</option>
+                <option>Something else</option>
               </select>
               <span class="field-error" aria-live="polite"></span>
             </div>
           </div>
 
-          <fieldset class="event-fields" id="eventFields" hidden>
+          <!-- Appears after choosing Tutoring or Dance -->
+          <div class="field-row">
+            <div class="field" id="tutoringField" hidden>
+              <label for="tutoringSubject">Subject</label>
+              <select id="tutoringSubject" name="tutoring_subject" disabled>
+                <option value="">Please choose</option>
+                <option>Mathematics</option>
+                <option>Physics</option>
+                <option>GIS and spatial analysis</option>
+              </select>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field" id="danceTypeField" hidden>
+              <label for="danceType">Type of event or function</label>
+              <select id="danceType" name="dance_type" disabled>
+                <option value="">Please choose</option>
+                <option>Wedding (lesson or first dance)</option>
+                <option>Ballroom or social dance event</option>
+                <option>School, college or club workshop</option>
+                <option>Private or group lessons</option>
+                <option>Other event or function</option>
+              </select>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <fieldset class="event-fields" id="eventFields" hidden disabled>
             <legend class="label" style="padding:0 8px">About your event or group</legend>
 
             <div class="field-row">
@@ -173,6 +192,5 @@
 
   <script src="assets/js/contact.js" defer></script>
   <script src="https://web3forms.com/client/script.js" async defer></script>
-
 </body>
 </html>
