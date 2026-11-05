@@ -244,7 +244,7 @@
             "<div>" +
               '<h2 data-text="site.name">Ratna Bahadur Bista</h2>' +
               '<p data-text="site.tagline">I map mountains, teach mathematics, and dance Balboa.</p>' +
-              '<p class="caption">Also known online as <span data-text="site.nickname">BistaKaji</span>.</p>' +
+              '<p class="caption" data-nickname hidden>Also known online as <span data-text="site.nickname">BistaKaji</span>.</p>' +
             "</div>" +
             "<div>" +
               '<p class="label">Pages</p>' +
