@@ -1,16 +1,11 @@
-# ------------------------------------------------------------------
 # Website editor configuration (Sveltia CMS)
 #
-# MOVING TO YOUR REAL SITE LATER
-#   When the repository is named exactly Bistakaji94.github.io, change:
-#     backend > repo   to   Bistakaji94/Bistakaji94.github.io
-#     site_url         to   https://bistakaji94.github.io
+# Moving to your real site later: when the repository is named exactly
+# Bistakaji94.github.io, change backend > repo to Bistakaji94/Bistakaji94.github.io
+# and site_url to https://bistakaji94.github.io
 #
-# publish_mode: editorial_workflow
-#   "Save" stores your work as a draft on a separate branch and does NOT
-#   change or rebuild the live website. Press "Publish" when you are done.
-#   To publish every save immediately instead, delete the publish_mode line.
-# ------------------------------------------------------------------
+# publish_mode: editorial_workflow means Save stores a draft and Publish
+# updates the live site. Delete that line to publish on every save.
 backend:
   name: github
   repo: Bistakaji94/personal.github.io
@@ -33,8 +28,7 @@ collections:
     - label: Pages
       name: pages
       widget: object
-      hint: 'Switch a page off to hide it and its menu links until you are ready. Hidden content is not secret:
-        it is still in the site''s files. For private drafts, use Save without Publish.'
+      hint: Switch a page off to hide it and its menu links until you are ready. Hidden content is not secret because it stays in the site files. For private drafts use Save without Publish.
       fields:
       - label: About page
         name: about
@@ -69,80 +63,80 @@ collections:
       widget: object
       hint: Switch a section off to hide it on its page.
       fields:
-      - label: 'Home: ''Currently'' strip'
+      - label: Home - Currently strip
         name: home_currently
         widget: boolean
         default: true
-      - label: 'Home: ''Four ways I spend my days'''
+      - label: Home - Four ways I spend my days
         name: home_pillars
         widget: boolean
         default: true
-      - label: 'Home: recent research'
+      - label: Home - Recent research
         name: home_research
         widget: boolean
         default: true
-      - label: 'Home: dance promotion band'
+      - label: Home - Dance promotion band
         name: home_dance
         widget: boolean
         default: true
-      - label: 'Home: latest field notes'
+      - label: Home - Latest field notes
         name: home_notes
         widget: boolean
         default: true
-      - label: 'About: story and photo'
+      - label: About - Story and photo
         name: about_story
         widget: boolean
         default: true
-      - label: 'About: principles'
+      - label: About - Principles
         name: about_principles
         widget: boolean
         default: true
-      - label: 'About: timeline and languages'
+      - label: About - Timeline and languages
         name: about_timeline
         widget: boolean
         default: true
-      - label: 'Tutoring: subjects'
+      - label: Tutoring - Subjects
         name: tutoring_subjects
         widget: boolean
         default: true
-      - label: 'Tutoring: how lessons work'
+      - label: Tutoring - How lessons work
         name: tutoring_method
         widget: boolean
         default: true
-      - label: 'Tutoring: formats'
+      - label: Tutoring - Formats
         name: tutoring_formats
         widget: boolean
         default: true
-      - label: 'Dance: what is Balboa'
+      - label: Dance - What is Balboa
         name: dance_about
         widget: boolean
         default: true
-      - label: 'Dance: who I teach'
+      - label: Dance - Who I teach
         name: dance_audiences
         widget: boolean
         default: true
-      - label: 'Dance: formats and what to expect'
+      - label: Dance - Formats and what to expect
         name: dance_formats
         widget: boolean
         default: true
-      - label: 'Dance: process steps'
+      - label: Dance - Process steps
         name: dance_process
         widget: boolean
         default: true
-      - label: 'Dance: questions and answers'
+      - label: Dance - Questions and answers
         name: dance_faq
         widget: boolean
         default: true
-      - label: 'Dance: call-to-action band'
+      - label: Dance - Call to action band
         name: dance_cta
         widget: boolean
         default: true
-    - label: Whole-site 'coming soon' mode
+    - label: Whole site coming soon mode
       name: maintenance
       widget: object
-      hint: When switched on, every page except Contact shows the message below.
+      hint: When switched on every page except Contact shows the message below.
       fields:
-      - label: Show 'coming soon' on the whole site
+      - label: Show coming soon on the whole site
         name: enabled
         widget: boolean
         default: false
@@ -161,13 +155,16 @@ collections:
       name: name
       widget: string
       hint: Appears in the header, footer and page titles.
-        - label: Online nickname
+    - label: Online nickname
       name: nickname
       widget: string
     - label: Show my online nickname in the footer
       name: showNickname
       widget: boolean
       default: true
+    - label: Small line above the headline
+      name: eyebrow
+      widget: string
     - label: Homepage headline
       name: tagline
       widget: string
@@ -177,7 +174,7 @@ collections:
     - label: Label on the portrait
       name: heroLabel
       widget: string
-      hint: 'For example: Patan, Kathmandu Valley'
+      hint: For example Patan, Kathmandu Valley
     - label: Portrait photo
       name: portrait
       widget: image
@@ -185,19 +182,19 @@ collections:
     - label: Portrait description
       name: portraitCaption
       widget: string
-      hint: Short description used as the photo's alt text.
-    - label: About-page photo
+      hint: Short description used as the photo alt text.
+    - label: About page photo
       name: aboutImage
       widget: image
       required: false
-    - label: About-page photo caption
+    - label: About page photo caption
       name: aboutImageCaption
       widget: string
       required: false
     - label: Email address
       name: email
       widget: string
-      hint: Shown on the site and in the footer. Messages are delivered to the email registered with Web3Forms.
+      hint: Shown on the site. Messages go to the email registered with Web3Forms.
     - label: Phone number
       name: phone
       widget: string
@@ -209,7 +206,7 @@ collections:
     - label: Coordinates under the name
       name: coordinates
       widget: string
-      hint: 'For example: 27.66 N, 85.32 E'
+      hint: For example 27.66 N, 85.32 E
     - label: Reply note on the contact page
       name: replyNote
       widget: string
@@ -243,7 +240,7 @@ collections:
     file: content/home.json
     format: json
     fields:
-    - label: '''Currently'' strip'
+    - label: Currently strip
       name: currently
       widget: list
       fields:
@@ -258,7 +255,7 @@ collections:
         widget: boolean
         default: false
         hint: Switch on to hide this item until you are ready. Nothing is deleted.
-      summary: '{{fields.label}}: {{fields.text}}'
+      summary: '{{fields.label}} - {{fields.text}}'
     - label: Four ways I spend my days
       name: pillars
       widget: list
@@ -272,7 +269,7 @@ collections:
       - label: Text
         name: text
         widget: text
-      - label: Link (page name, e.g. research.html)
+      - label: Link (page name such as research.html)
         name: link
         widget: string
       - label: Link label
@@ -350,7 +347,7 @@ collections:
         widget: boolean
         default: false
         hint: Switch on to hide this item until you are ready. Nothing is deleted.
-      summary: '{{fields.when}}: {{fields.title}}'
+      summary: '{{fields.when}} - {{fields.title}}'
     - label: Languages
       name: languages
       widget: list
@@ -621,7 +618,7 @@ collections:
     - label: Section title
       name: aboutTitle
       widget: string
-    - label: About-Balboa paragraphs
+    - label: About Balboa paragraphs
       name: aboutParagraphs
       widget: list
       field:
@@ -712,9 +709,9 @@ collections:
         default: false
         hint: Switch on to hide this item until you are ready. Nothing is deleted.
       summary: '{{fields.question}}'
-    - label: Call-to-action title
+    - label: Call to action title
       name: ctaTitle
       widget: string
-    - label: Call-to-action text
+    - label: Call to action text
       name: ctaText
       widget: text
