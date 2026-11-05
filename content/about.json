@@ -1,0 +1,56 @@
+{
+  "headline": "A map-maker who kept ending up in the classroom.",
+  "lead": "I came to mountains through numbers, and to teaching through patience.",
+  "paragraphs": [
+    "I'm based in Patan, in the Kathmandu Valley, and I'm studying for an MSc in Mountain and Mountaineering Science at NATHM. My work sits where terrain meets water: GIS, remote sensing and hydrology applied to flood hazards and river basins in Nepal.",
+    "I also teach. For several years I've tutored A-Level students in Mathematics and Physics, and more recently IB. I care less about reciting methods than about the moment a student sees why a method works.",
+    "Outside the classroom I'm a certified trekking guide and a Balboa dance teacher. Both ask you to read a surface, a trail or a dance floor, and move carefully across it with other people. I lived in Germany for several years before returning to Nepal, and I still speak conversational German.",
+    "Online I go by BistaKaji, the name I use for games and tech reviews."
+  ],
+  "principles": [
+    {
+      "title": "Start from the terrain",
+      "text": "Look at what is actually there before deciding what it means. In research, in teaching and on the trail."
+    },
+    {
+      "title": "Say what the data cannot say",
+      "text": "Separate what is established from what is merely plausible. It makes research more honest, and students more confident."
+    },
+    {
+      "title": "Small steps, well connected",
+      "text": "Balboa teaches this literally. Precision at a small scale carries you through fast music, and through difficult mathematics."
+    }
+  ],
+  "timeline": [
+    {
+      "when": "Now",
+      "title": "MSc Mountain and Mountaineering Science, NATHM",
+      "text": "Postgraduate study in mountain environments, hazards, GIS and hydrology."
+    },
+    {
+      "when": "Now",
+      "title": "Mathematics and Physics tutor",
+      "text": "A-Level for several years, IB more recently, online and in person."
+    },
+    {
+      "when": "Now",
+      "title": "Balboa dance teacher",
+      "text": "Lessons and workshops for weddings, events, schools and colleges."
+    },
+    {
+      "when": "Qualification",
+      "title": "Certified trekking guide, Nepal",
+      "text": "Practical experience of Nepal's trails, mountain communities and landscapes."
+    },
+    {
+      "when": "Before",
+      "title": "Years in Germany",
+      "text": "Studied and worked part time abroad before returning to Nepal."
+    }
+  ],
+  "languages": [
+    "Nepali (native)",
+    "English (professional)",
+    "German (conversational)"
+  ]
+}

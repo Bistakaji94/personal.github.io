@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Ratna Bahadur Bista</title>
+  <meta name="description" content="Photo albums from treks, mountain landscapes, fieldwork and Balboa dancing in Nepal.">
+  <meta name="theme-color" content="#f3efe5">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gallery | Ratna Bahadur Bista">
+  <meta property="og:description" content="Photo albums from treks, mountain landscapes, fieldwork and Balboa dancing in Nepal.">
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas,_Ama_Dablam,_Nepal.jpg?width=1200">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/content.js" defer></script>
+</head>
+
+<body data-page="gallery">
+
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="label">Gallery</p>
+        <h1>Trails, valleys and dance floors</h1>
+        <p class="lede">Select any photograph to see it larger. Use the arrow keys, or swipe, to move through an album.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap" id="gallery-list"></div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <button class="lb-btn lb-close" type="button" data-lb="close" aria-label="Close viewer">&times;</button>
+      <button class="lb-btn lb-prev" type="button" data-lb="prev" aria-label="Previous photo">&#8249;</button>
+
+      <figure class="lb-figure">
+        <img id="lb-img" src="" alt="">
+        <figcaption>
+          <span id="lb-caption"></span>
+          <span class="label" id="lb-count"></span>
+        </figcaption>
+      </figure>
+
+      <button class="lb-btn lb-next" type="button" data-lb="next" aria-label="Next photo">&#8250;</button>
+    </dialog>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <p style="padding:16px;text-align:center">This website needs JavaScript to show its content.</p>
+  </noscript>
+
+</body>
+</html>

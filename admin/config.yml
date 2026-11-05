@@ -1,0 +1,719 @@
+# ------------------------------------------------------------------
+# Website editor configuration (Sveltia CMS)
+#
+# MOVING TO YOUR REAL SITE LATER
+#   When the repository is named exactly Bistakaji94.github.io, change:
+#     backend > repo   to   Bistakaji94/Bistakaji94.github.io
+#     site_url         to   https://bistakaji94.github.io
+#
+# publish_mode: editorial_workflow
+#   "Save" stores your work as a draft on a separate branch and does NOT
+#   change or rebuild the live website. Press "Publish" when you are done.
+#   To publish every save immediately instead, delete the publish_mode line.
+# ------------------------------------------------------------------
+backend:
+  name: github
+  repo: Bistakaji94/personal.github.io
+  branch: main
+publish_mode: editorial_workflow
+media_folder: /images
+public_folder: /images
+site_url: https://bistakaji94.github.io/personal.github.io
+collections:
+- name: website
+  label: Website content
+  media_folder: /images
+  public_folder: /images
+  files:
+  - name: visibility
+    label: 0. Show or hide pages and sections
+    file: content/visibility.json
+    format: json
+    fields:
+    - label: Pages
+      name: pages
+      widget: object
+      hint: 'Switch a page off to hide it and its menu links until you are ready. Hidden content is not secret:
+        it is still in the site''s files. For private drafts, use Save without Publish.'
+      fields:
+      - label: About page
+        name: about
+        widget: boolean
+        default: true
+      - label: Research page
+        name: research
+        widget: boolean
+        default: true
+      - label: Tutoring page
+        name: tutoring
+        widget: boolean
+        default: true
+      - label: Dance (Balboa) page
+        name: dance
+        widget: boolean
+        default: true
+      - label: Field notes page
+        name: blog
+        widget: boolean
+        default: true
+      - label: Vlogs page
+        name: vlogs
+        widget: boolean
+        default: true
+      - label: Gallery page
+        name: gallery
+        widget: boolean
+        default: true
+    - label: Sections
+      name: sections
+      widget: object
+      hint: Switch a section off to hide it on its page.
+      fields:
+      - label: 'Home: ''Currently'' strip'
+        name: home_currently
+        widget: boolean
+        default: true
+      - label: 'Home: ''Four ways I spend my days'''
+        name: home_pillars
+        widget: boolean
+        default: true
+      - label: 'Home: recent research'
+        name: home_research
+        widget: boolean
+        default: true
+      - label: 'Home: dance promotion band'
+        name: home_dance
+        widget: boolean
+        default: true
+      - label: 'Home: latest field notes'
+        name: home_notes
+        widget: boolean
+        default: true
+      - label: 'About: story and photo'
+        name: about_story
+        widget: boolean
+        default: true
+      - label: 'About: principles'
+        name: about_principles
+        widget: boolean
+        default: true
+      - label: 'About: timeline and languages'
+        name: about_timeline
+        widget: boolean
+        default: true
+      - label: 'Tutoring: subjects'
+        name: tutoring_subjects
+        widget: boolean
+        default: true
+      - label: 'Tutoring: how lessons work'
+        name: tutoring_method
+        widget: boolean
+        default: true
+      - label: 'Tutoring: formats'
+        name: tutoring_formats
+        widget: boolean
+        default: true
+      - label: 'Dance: what is Balboa'
+        name: dance_about
+        widget: boolean
+        default: true
+      - label: 'Dance: who I teach'
+        name: dance_audiences
+        widget: boolean
+        default: true
+      - label: 'Dance: formats and what to expect'
+        name: dance_formats
+        widget: boolean
+        default: true
+      - label: 'Dance: process steps'
+        name: dance_process
+        widget: boolean
+        default: true
+      - label: 'Dance: questions and answers'
+        name: dance_faq
+        widget: boolean
+        default: true
+      - label: 'Dance: call-to-action band'
+        name: dance_cta
+        widget: boolean
+        default: true
+    - label: Whole-site 'coming soon' mode
+      name: maintenance
+      widget: object
+      hint: When switched on, every page except Contact shows the message below.
+      fields:
+      - label: Show 'coming soon' on the whole site
+        name: enabled
+        widget: boolean
+        default: false
+      - label: Title
+        name: title
+        widget: string
+      - label: Message
+        name: message
+        widget: text
+  - name: site
+    label: 1. Personal information (shows on every page)
+    file: content/site.json
+    format: json
+    fields:
+    - label: Full name
+      name: name
+      widget: string
+      hint: Appears in the header, footer and page titles.
+    - label: Online nickname
+      name: nickname
+      widget: string
+    - label: Small line above the headline
+      name: eyebrow
+      widget: string
+    - label: Homepage headline
+      name: tagline
+      widget: string
+    - label: Homepage introduction
+      name: intro
+      widget: text
+    - label: Label on the portrait
+      name: heroLabel
+      widget: string
+      hint: 'For example: Patan, Kathmandu Valley'
+    - label: Portrait photo
+      name: portrait
+      widget: image
+      required: false
+    - label: Portrait description
+      name: portraitCaption
+      widget: string
+      hint: Short description used as the photo's alt text.
+    - label: About-page photo
+      name: aboutImage
+      widget: image
+      required: false
+    - label: About-page photo caption
+      name: aboutImageCaption
+      widget: string
+      required: false
+    - label: Email address
+      name: email
+      widget: string
+      hint: Shown on the site and in the footer. Messages are delivered to the email registered with Web3Forms.
+    - label: Phone number
+      name: phone
+      widget: string
+      hint: Leave empty to hide it.
+      required: false
+    - label: Location
+      name: location
+      widget: string
+    - label: Coordinates under the name
+      name: coordinates
+      widget: string
+      hint: 'For example: 27.66 N, 85.32 E'
+    - label: Reply note on the contact page
+      name: replyNote
+      widget: string
+    - label: GitHub link
+      name: github
+      widget: string
+      required: false
+    - label: LinkedIn link
+      name: linkedin
+      widget: string
+      required: false
+    - label: YouTube link
+      name: youtube
+      widget: string
+      required: false
+    - label: Instagram link
+      name: instagram
+      widget: string
+      required: false
+    - label: ResearchGate link
+      name: researchgate
+      widget: string
+      required: false
+    - label: Footer note
+      name: footerNote
+      widget: text
+      hint: Photo credits or other small print.
+      required: false
+  - name: home
+    label: 2. Home page
+    file: content/home.json
+    format: json
+    fields:
+    - label: '''Currently'' strip'
+      name: currently
+      widget: list
+      fields:
+      - label: Label
+        name: label
+        widget: string
+      - label: Text
+        name: text
+        widget: string
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.label}}: {{fields.text}}'
+    - label: Four ways I spend my days
+      name: pillars
+      widget: list
+      fields:
+      - label: Number
+        name: number
+        widget: string
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Link (page name, e.g. research.html)
+        name: link
+        widget: string
+      - label: Link label
+        name: linkLabel
+        widget: string
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.number}} {{fields.title}}'
+    - label: Dance promotion band
+      name: dancePromo
+      widget: object
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Button label
+        name: button
+        widget: string
+  - name: about
+    label: 3. About page
+    file: content/about.json
+    format: json
+    fields:
+    - label: Headline
+      name: headline
+      widget: string
+    - label: Lead sentence
+      name: lead
+      widget: string
+    - label: Story paragraphs
+      name: paragraphs
+      widget: list
+      field:
+        label: Paragraph
+        name: text
+        widget: text
+      hint: One entry per paragraph.
+    - label: Principles
+      name: principles
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+    - label: Timeline
+      name: timeline
+      widget: list
+      fields:
+      - label: When
+        name: when
+        widget: string
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.when}}: {{fields.title}}'
+    - label: Languages
+      name: languages
+      widget: list
+      field:
+        label: Language
+        name: text
+        widget: text
+  - name: research
+    label: 4. Research projects
+    file: content/research.json
+    format: json
+    fields:
+    - label: Projects
+      name: items
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Topic
+        name: category
+        widget: select
+        options:
+        - label: GIS and remote sensing
+          value: gis
+        - label: Hydrology
+          value: hydrology
+        - label: Mountain hazards
+          value: hazards
+      - label: Image
+        name: image
+        widget: image
+        required: false
+      - label: Image caption
+        name: imageCaption
+        widget: string
+        required: false
+      - label: Short summary
+        name: summary
+        widget: text
+      - label: Methods
+        name: methods
+        widget: text
+      - label: Outcome
+        name: outcome
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+  - name: posts
+    label: 5. Field notes (blog)
+    file: content/posts.json
+    format: json
+    fields:
+    - label: Notes
+      name: items
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Topic
+        name: category
+        widget: select
+        options:
+        - label: Trekking
+          value: trekking
+        - label: Research
+          value: research
+        - label: Landscape
+          value: landscape
+        - label: Dance
+          value: dance
+        - label: Teaching
+          value: teaching
+      - label: Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - label: Image
+        name: image
+        widget: image
+        required: false
+      - label: Image caption
+        name: imageCaption
+        widget: string
+        required: false
+      - label: Text
+        name: body
+        widget: text
+        hint: Leave a blank line between paragraphs.
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+  - name: videos
+    label: 6. Vlogs
+    file: content/videos.json
+    format: json
+    fields:
+    - label: Videos
+      name: items
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Description
+        name: description
+        widget: text
+      - label: YouTube or Vimeo link
+        name: url
+        widget: string
+        hint: Paste the normal watch link. The video plays inside the page.
+        required: false
+      - label: Thumbnail (optional for YouTube)
+        name: image
+        widget: image
+        required: false
+      - label: Thumbnail caption
+        name: imageCaption
+        widget: string
+        required: false
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+  - name: gallery
+    label: 7. Gallery albums
+    file: content/gallery.json
+    format: json
+    fields:
+    - label: Albums
+      name: items
+      widget: list
+      fields:
+      - label: Album title
+        name: title
+        widget: string
+      - label: Album description
+        name: description
+        widget: text
+        required: false
+      - label: Cover photo
+        name: cover
+        widget: image
+        required: false
+      - label: Cover caption
+        name: coverCaption
+        widget: string
+        required: false
+      - label: Photos
+        name: images
+        widget: list
+        fields:
+        - label: Photo
+          name: image
+          widget: image
+        - label: Caption
+          name: caption
+          widget: string
+          required: false
+        - label: Hide this on the website
+          name: hidden
+          widget: boolean
+          default: false
+          hint: Switch on to hide this item until you are ready. Nothing is deleted.
+        summary: '{{fields.caption}}'
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+  - name: tutoring
+    label: 8. Tutoring page
+    file: content/tutoring.json
+    format: json
+    fields:
+    - label: Headline
+      name: headline
+      widget: string
+    - label: Introduction
+      name: intro
+      widget: text
+    - label: Subjects
+      name: subjects
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Levels
+        name: levels
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+    - label: How lessons work
+      name: approach
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+    - label: Formats
+      name: formats
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+    - label: Closing sentence
+      name: closing
+      widget: text
+  - name: dance
+    label: 9. Balboa dance page
+    file: content/dance.json
+    format: json
+    fields:
+    - label: Headline
+      name: headline
+      widget: string
+    - label: Introduction
+      name: intro
+      widget: text
+    - label: Main photo
+      name: image
+      widget: image
+      required: false
+    - label: Photo caption
+      name: imageCaption
+      widget: string
+      required: false
+    - label: Section title
+      name: aboutTitle
+      widget: string
+    - label: About-Balboa paragraphs
+      name: aboutParagraphs
+      widget: list
+      field:
+        label: Paragraph
+        name: text
+        widget: text
+      hint: One entry per paragraph.
+    - label: Who I teach
+      name: audiences
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Enquiry type
+        name: topic
+        widget: select
+        options:
+        - label: Wedding
+          value: wedding
+        - label: Ballroom or social dance event
+          value: event
+        - label: School, college or club
+          value: school
+        - label: Private or group lessons
+          value: private
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+    - label: Formats
+      name: formats
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+    - label: What every session includes
+      name: included
+      widget: list
+      field:
+        label: Item
+        name: text
+        widget: text
+    - label: Process steps
+      name: process
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Text
+        name: text
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.title}}'
+    - label: Questions and answers
+      name: faq
+      widget: list
+      fields:
+      - label: Question
+        name: question
+        widget: string
+      - label: Answer
+        name: answer
+        widget: text
+      - label: Hide this on the website
+        name: hidden
+        widget: boolean
+        default: false
+        hint: Switch on to hide this item until you are ready. Nothing is deleted.
+      summary: '{{fields.question}}'
+    - label: Call-to-action title
+      name: ctaTitle
+      widget: string
+    - label: Call-to-action text
+      name: ctaText
+      widget: text

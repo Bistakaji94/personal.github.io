@@ -1,0 +1,99 @@
+{
+  "headline": "Balboa: small steps, close embrace, fast music.",
+  "intro": "Balboa is a swing dance that grew out of the crowded dance halls of 1930s Southern California. Partners dance upright and connected, with small, quick footwork, so it works where there isn't much room. I teach it to beginners and social dancers, and bring it to weddings, ballroom events, schools and colleges.",
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CalBal_2025_open_classic_finals_all-skate_%28still%29.jpg?width=1200",
+  "imageCaption": "Placeholder: Balboa social dancing. Photo from Wikimedia Commons.",
+  "aboutTitle": "What is Balboa?",
+  "aboutParagraphs": [
+    "Balboa takes its name from the Balboa Peninsula in Newport Beach, California, where it was recognised as a distinct swing style in the early 1930s. Dancers stay upright and chest to chest, and most of the movement happens in the feet.",
+    "That makes it workable on a crowded floor and at a wide range of tempos, including very fast music. Many dancers also mix in an open style called Bal-Swing, with spins and turns, once the basic connection feels comfortable."
+  ],
+  "audiences": [
+    {
+      "title": "Weddings",
+      "text": "Lessons for couples preparing a first dance, or a short taster for wedding guests.",
+      "topic": "wedding"
+    },
+    {
+      "title": "Ballroom and social dance events",
+      "text": "A Balboa class or taster as part of your evening, for dancers who already know other partner dances.",
+      "topic": "event"
+    },
+    {
+      "title": "Schools and colleges",
+      "text": "Workshops for dance clubs, cultural programmes and student events, adapted to age and group size.",
+      "topic": "school"
+    },
+    {
+      "title": "Private and small groups",
+      "text": "Lessons for friends, couples and communities who want to learn a partner dance.",
+      "topic": "private"
+    }
+  ],
+  "formats": [
+    {
+      "title": "Taster session",
+      "text": "A short introduction for large or mixed groups."
+    },
+    {
+      "title": "Workshop",
+      "text": "A longer session with a clear path from first steps to social dancing."
+    },
+    {
+      "title": "Course or series",
+      "text": "Weekly classes for clubs, colleges and communities."
+    },
+    {
+      "title": "Private lessons",
+      "text": "One to one or for a couple, at your pace."
+    }
+  ],
+  "included": [
+    "A session plan matched to your group's age, experience and floor space",
+    "Step-by-step teaching, with partner rotation for groups where it helps",
+    "Guidance on music and tempo for beginners",
+    "Suggestions for practising afterwards"
+  ],
+  "process": [
+    {
+      "title": "Tell me about it",
+      "text": "Date, place, group size and what you have in mind."
+    },
+    {
+      "title": "We agree the format",
+      "text": "Length, level, space and music."
+    },
+    {
+      "title": "I teach",
+      "text": "On the day, at your venue or online."
+    },
+    {
+      "title": "Keep dancing",
+      "text": "Pointers on where to practise next."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does anyone need experience?",
+      "answer": "No. Sessions can be built for complete beginners, and adapted for people who already dance other styles."
+    },
+    {
+      "question": "Do people need a partner?",
+      "answer": "Not always. For groups I can organise partner rotation so everyone gets to dance."
+    },
+    {
+      "question": "How much space do we need?",
+      "answer": "Balboa is designed for small spaces, so a modest hall or classroom floor often works. Tell me the room size when you enquire."
+    },
+    {
+      "question": "Where do you teach?",
+      "answer": "I'm based in Patan, Lalitpur. Other locations by arrangement."
+    },
+    {
+      "question": "How much does it cost?",
+      "answer": "It depends on the format, group size and location. Send the details through the contact form and I'll reply with a quote."
+    }
+  ],
+  "ctaTitle": "Planning something?",
+  "ctaText": "Tell me about the occasion, the group and the date, and I'll suggest a format."
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Ratna Bahadur Bista</title>
+  <meta name="description" content="Contact Ratna Bahadur Bista about Balboa dance lessons for weddings and events, Mathematics and Physics tutoring, or GIS and mountain research.">
+  <meta name="theme-color" content="#f3efe5">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Ratna Bahadur Bista">
+  <meta property="og:description" content="Contact Ratna Bahadur Bista about Balboa dance lessons for weddings and events, Mathematics and Physics tutoring, or GIS and mountain research.">
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas,_Ama_Dablam,_Nepal.jpg?width=1200">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/content.js" defer></script>
+</head>
+
+<body data-page="contact">
+
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="label">Contact</p>
+        <h1>Let's talk</h1>
+        <p class="lede">
+          Dance classes for a wedding or event, tutoring, research or a mountain question:
+          tell me a little and I'll reply.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="36058563-68e9-4962-98e3-a7dc80bc1c8d">
+          <input type="hidden" name="from_name" value="Website enquiry">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone <span class="optional">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="topic">What is this about?</label>
+              <select id="topic" name="topic" required>
+                <option value="">Please choose</option>
+                <optgroup label="Dance">
+                  <option>Dance: wedding lesson or first dance</option>
+                  <option>Dance: ballroom or social dance event</option>
+                  <option>Dance: school, college or club workshop</option>
+                  <option>Dance: private or group lessons</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option>Tutoring: Mathematics</option>
+                  <option>Tutoring: Physics</option>
+                  <option>GIS or research collaboration</option>
+                  <option>Trekking or mountain enquiry</option>
+                  <option>Something else</option>
+                </optgroup>
+              </select>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <fieldset class="event-fields" id="eventFields" hidden>
+            <legend class="label" style="padding:0 8px">About your event or group</legend>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="eventDate">Date <span class="optional">(if known)</span></label>
+                <input id="eventDate" name="event_date" type="text" placeholder="e.g. 14 February 2027">
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="eventPlace">Venue or city</label>
+                <input id="eventPlace" name="event_place" type="text">
+                <span class="field-error"></span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="groupSize">Approximate number of people</label>
+                <input id="groupSize" name="group_size" type="number" min="1" inputmode="numeric">
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="groupLevel">Dance experience</label>
+                <select id="groupLevel" name="group_level">
+                  <option value="">Not sure</option>
+                  <option>Complete beginners</option>
+                  <option>Some experience</option>
+                  <option>Mixed levels</option>
+                </select>
+                <span class="field-error"></span>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" maxlength="3000" required></textarea>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+
+          <div class="h-captcha" data-captcha="true"></div>
+
+          <button class="btn btn-solid" type="submit">Send message</button>
+          <p class="form-result" id="formResult" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-side" aria-label="Contact details">
+          <div>
+            <p class="label">Email</p>
+            <p><a data-mailto="site.email" href="#">your.email@example.com</a></p>
+          </div>
+          <div>
+            <p class="label">Based in</p>
+            <p data-text="site.location">Patan, Bagmati Province, Nepal</p>
+          </div>
+          <div>
+            <p class="label">Replies</p>
+            <p data-text="site.replyNote">I read every message and reply as soon as I can.</p>
+          </div>
+          <div>
+            <p class="label">Elsewhere</p>
+            <div class="social-list">
+              <a data-href="site.github" hidden target="_blank" rel="noopener">GitHub</a>
+              <a data-href="site.linkedin" hidden target="_blank" rel="noopener">LinkedIn</a>
+              <a data-href="site.youtube" hidden target="_blank" rel="noopener">YouTube</a>
+              <a data-href="site.instagram" hidden target="_blank" rel="noopener">Instagram</a>
+              <a data-href="site.researchgate" hidden target="_blank" rel="noopener">ResearchGate</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <p style="padding:16px;text-align:center">This website needs JavaScript to show its content.</p>
+  </noscript>
+
+  <script src="assets/js/contact.js" defer></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+</body>
+</html>

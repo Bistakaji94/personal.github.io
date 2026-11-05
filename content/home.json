@@ -1,0 +1,55 @@
+{
+  "currently": [
+    {
+      "label": "Studying",
+      "text": "MSc Mountain and Mountaineering Science, NATHM"
+    },
+    {
+      "label": "Mapping",
+      "text": "Flood susceptibility in Lalitpur District"
+    },
+    {
+      "label": "Teaching",
+      "text": "Mathematics and Physics, A-Level and IB"
+    },
+    {
+      "label": "Dancing",
+      "text": "Balboa, close embrace, small steps"
+    }
+  ],
+  "pillars": [
+    {
+      "number": "01",
+      "title": "Map",
+      "text": "GIS, remote sensing and hydrology applied to flood hazards and river basins in Nepal.",
+      "link": "research.html",
+      "linkLabel": "Research"
+    },
+    {
+      "number": "02",
+      "title": "Teach",
+      "text": "Mathematics and Physics for A-Level, IB and GCSE students, online and in person.",
+      "link": "tutoring.html",
+      "linkLabel": "Tutoring"
+    },
+    {
+      "number": "03",
+      "title": "Dance",
+      "text": "Balboa swing dance lessons for weddings, ballroom events, schools and colleges.",
+      "link": "dance.html",
+      "linkLabel": "Balboa classes"
+    },
+    {
+      "number": "04",
+      "title": "Walk",
+      "text": "Certified trekking guide. Field notes, photographs and vlogs from the trail.",
+      "link": "blog.html",
+      "linkLabel": "Field notes"
+    }
+  ],
+  "dancePromo": {
+    "title": "Bring Balboa to your wedding, school or event.",
+    "text": "Balboa is danced in a close embrace with small, quick steps, which makes it practical when floor space is limited. I teach tasters, workshops and courses for beginners and social dancers.",
+    "button": "Ask about a class"
+  }
+}

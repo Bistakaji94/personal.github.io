@@ -1,0 +1,54 @@
+{
+  "headline": "Mathematics and Physics, explained until it makes sense.",
+  "intro": "I tutor students who want to understand a topic, not just survive the next paper. Lessons are patient and structured, and always begin with finding out what you already know.",
+  "subjects": [
+    {
+      "title": "Mathematics",
+      "levels": "A-Level · IB · GCSE",
+      "text": "Pure, applied and statistics, with careful attention to exam technique and to the reasons behind each method."
+    },
+    {
+      "title": "Physics",
+      "levels": "A-Level · IB",
+      "text": "Mechanics, fields, waves and more, built from first principles and checked against worked examples."
+    },
+    {
+      "title": "GIS and spatial analysis",
+      "levels": "Beginners to project work",
+      "text": "QGIS, raster analysis, map design and multi-criteria methods such as AHP, for students and early researchers."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Find the gap",
+      "text": "A short diagnostic conversation shows where understanding stops and why."
+    },
+    {
+      "title": "Build the idea",
+      "text": "New material is introduced through worked examples and questions, not lectures."
+    },
+    {
+      "title": "Practise on purpose",
+      "text": "Exam-style problems chosen to fix the specific weakness, not to fill time."
+    },
+    {
+      "title": "Review and adjust",
+      "text": "Every few lessons we check progress against your goal and change the plan."
+    }
+  ],
+  "formats": [
+    {
+      "title": "Online lessons",
+      "text": "Live, one to one, with a shared digital whiteboard."
+    },
+    {
+      "title": "In-person lessons",
+      "text": "In and around Patan, by arrangement."
+    },
+    {
+      "title": "Exam-preparation blocks",
+      "text": "Focused revision sprints before mocks and final papers."
+    }
+  ],
+  "closing": "Tell me the subject, the level and the exam date, and I'll suggest a plan."
+}

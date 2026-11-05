@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "title": "What a trail teaches about terrain",
+      "category": "trekking",
+      "date": "2026-11-01",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/One_of_many_footbridges_along_the_trail,_Nepal,_trek.jpg?width=1200",
+      "imageCaption": "A footbridge on a Nepal trekking trail.",
+      "body": "A trail is more than a route between places. It records slope stability, drainage, settlement choices and the practical decisions people make to live with steep, moving ground.\n\nWalking it slowly is the cheapest field survey there is."
+    },
+    {
+      "title": "Why Balboa works on a crowded floor",
+      "category": "dance",
+      "date": "2026-11-02",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CalBal_2025_open_classic_finals_all-skate_%28still%29.jpg?width=1200",
+      "imageCaption": "Placeholder: Balboa social dancing. Photo from Wikimedia Commons.",
+      "body": "Balboa grew up in the packed dance halls of Southern California in the early 1930s, where there was little room to travel. Dancers stayed upright and close, and let small, quick footwork carry the rhythm.\n\nIt is a good reminder that you do not need much space to move well."
+    },
+    {
+      "title": "Seeing flood risk before the water arrives",
+      "category": "research",
+      "date": "2026-11-03",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2026_Nepal_floods_map.svg?width=1200",
+      "imageCaption": "Placeholder flood map.",
+      "body": "A susceptibility map does not predict a particular flood. It shows where terrain, drainage, rainfall and land cover combine to make flooding more likely, which is exactly what planners need to know first."
+    },
+    {
+      "title": "Rivers, ice and the memory of mountains",
+      "category": "landscape",
+      "date": "2026-11-04",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A_beautiful_view_of_the_Himalayan_river_valley_and_mountain_settlement.jpg?width=1200",
+      "imageCaption": "A Himalayan river valley and settlement.",
+      "body": "Himalayan rivers carry a record of altitude, glacier melt, monsoon rain and geological change. Standing beside one, it is easy to forget the landscape is still moving."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "title": "Trekking in the Nepal Himalaya",
+      "description": "A short visual story from a mountain trail.",
+      "url": "",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas,_Ama_Dablam,_Nepal.jpg?width=1200",
+      "imageCaption": "Placeholder thumbnail."
+    },
+    {
+      "title": "Reading a river valley",
+      "description": "A field-style explainer on rivers, slopes, settlements and sediment.",
+      "url": "",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A_beautiful_view_of_the_Himalayan_river_valley_and_mountain_settlement.jpg?width=1200",
+      "imageCaption": "Placeholder thumbnail."
+    }
+  ]
+}

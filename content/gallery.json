@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "title": "Mountain landscapes",
+      "description": "Trails, valleys and high country from Nepal.",
+      "cover": "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas,_Ama_Dablam,_Nepal.jpg?width=1200",
+      "coverCaption": "Himalayan peaks near Ama Dablam.",
+      "images": [
+        {
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Trekking_Trail_and_Beautiful_Himalayas_seen_at_Mustang,Nepal.jpg?width=1200",
+          "caption": "Trekking trail in Mustang."
+        },
+        {
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas,_Nepal.jpg?width=1200",
+          "caption": "High-mountain terrain in the Everest region."
+        },
+        {
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nepal_Yak_-_Himalaya_trekking.jpg?width=1200",
+          "caption": "A pack yak in the Khumbu."
+        },
+        {
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/One_of_many_footbridges_along_the_trail,_Nepal,_trek.jpg?width=1200",
+          "caption": "A footbridge along a Nepal trek."
+        },
+        {
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A_beautiful_view_of_the_Himalayan_river_valley_and_mountain_settlement.jpg?width=1200",
+          "caption": "A river valley and mountain settlement."
+        }
+      ]
+    },
+    {
+      "title": "Balboa",
+      "description": "Social dancing and classes.",
+      "cover": "https://commons.wikimedia.org/wiki/Special:FilePath/CalBal_2025_open_classic_finals_all-skate_%28still%29.jpg?width=1200",
+      "coverCaption": "Placeholder: Balboa social dancing, Wikimedia Commons.",
+      "images": [
+        {
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Lakes_Balboa_Escape_2024.jpg?width=1200",
+          "caption": "Placeholder: a Balboa weekend, Wikimedia Commons."
+        }
+      ]
+    }
+  ]
+}

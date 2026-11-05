@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "title": "Flood Susceptibility Mapping of Lalitpur District",
+      "category": "gis",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2026_Nepal_floods_map.svg?width=1200",
+      "imageCaption": "Placeholder: flood map of Nepal. Replace with your susceptibility map.",
+      "summary": "A GIS-based AHP/MCDA study combining elevation, slope, rainfall, land cover, NDVI, wetness, river distance and drainage density.",
+      "methods": "QGIS, DEM terrain analysis, raster normalisation, AHP weighting, multi-criteria decision analysis, drainage analysis and map classification.",
+      "outcome": "A classified flood-susceptibility surface that identifies the areas of Lalitpur District deserving closer attention in planning."
+    },
+    {
+      "title": "Rasuwa–Bhotekoshi Flood Event, August 2026",
+      "category": "hazards",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Himalayas,_Nepal.jpg?width=1200",
+      "imageCaption": "Placeholder: high-mountain landscape.",
+      "summary": "A study of slope instability, debris flow, permafrost and cascading hazards behind the August 2026 flood.",
+      "methods": "Literature synthesis, event chronology, geospatial context and critical evaluation of evidence.",
+      "outcome": "A cause-focused analysis that separates established mechanisms from unresolved hypotheses."
+    },
+    {
+      "title": "River-Basin Hydrology in Nepal",
+      "category": "hydrology",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A_beautiful_view_of_the_Himalayan_river_valley_and_mountain_settlement.jpg?width=1200",
+      "imageCaption": "Placeholder: Himalayan river valley.",
+      "summary": "A comparison of discharge, glacier melt, monsoon rainfall and seasonal water availability across Nepalese basins, including the Gandaki.",
+      "methods": "Comparative basin analysis using hydrological and climate data.",
+      "outcome": "Insight into how mountain processes shape water supply in downstream river systems."
+    }
+  ]
+}

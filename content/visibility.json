@@ -1,0 +1,35 @@
+{
+  "pages": {
+    "about": true,
+    "research": true,
+    "tutoring": true,
+    "dance": true,
+    "blog": true,
+    "vlogs": true,
+    "gallery": true
+  },
+  "sections": {
+    "home_currently": true,
+    "home_pillars": true,
+    "home_research": true,
+    "home_dance": true,
+    "home_notes": true,
+    "about_story": true,
+    "about_principles": true,
+    "about_timeline": true,
+    "tutoring_subjects": true,
+    "tutoring_method": true,
+    "tutoring_formats": true,
+    "dance_about": true,
+    "dance_audiences": true,
+    "dance_formats": true,
+    "dance_process": true,
+    "dance_faq": true,
+    "dance_cta": true
+  },
+  "maintenance": {
+    "enabled": false,
+    "title": "Coming soon",
+    "message": "I'm putting the finishing touches on this website. Please check back soon, or get in touch using the button below."
+  }
+}
