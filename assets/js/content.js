@@ -292,6 +292,11 @@
       if (value !== undefined && value !== "") el.textContent = value;
     });
 
+   $$("[data-nickname]").forEach(function (el) {
+      const site = data.site || {};
+      el.hidden = site.showNickname === false || !site.nickname;
+    });
+
     $$("[data-paras]").forEach(function (el) {
       const value = get(data, el.dataset.paras);
       if (Array.isArray(value)) el.innerHTML = value.map(paragraphs).join("");
