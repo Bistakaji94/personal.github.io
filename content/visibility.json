@@ -28,7 +28,7 @@
     "dance_cta": true
   },
   "maintenance": {
-    "enabled": false,
+    "enabled": true,
     "title": "Coming soon",
     "message": "I'm putting the finishing touches on this website. Please check back soon, or get in touch using the button below."
   }
